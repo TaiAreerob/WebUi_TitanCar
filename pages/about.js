@@ -1,11 +1,9 @@
-import Layout from '../components/Layout'
+import Layout from "../components/Layout";
 
 const Component = () => (
-    <Layout>
-        <div>
-            about
-        </div>
-    </Layout>
-)
+  <Layout>
+    <div style={{ paddingTop: 50 }}>about</div>
+  </Layout>
+);
 
-export default Component
+export default Component;
