@@ -32,7 +32,7 @@ class Layout extends React.Component<Props, State> {
             },
             {
               value: "Facebook page",
-              href: "#",
+              href: "https://www.facebook.com",
             },
             {
               value: "Profile",
@@ -82,7 +82,14 @@ class Layout extends React.Component<Props, State> {
               >
                 {this.state.config.map((b) =>
                   b.menu.map((c) => (
-                    <Nav.Link href={c.href} className="menu-bar-link">
+                    <Nav.Link
+                      href={c.href}
+                      className="menu-bar-link"
+                      style={{
+                        paddingRight: "20rem; !important",
+                        paddingLeft: "20rem; !important",
+                      }}
+                    >
                       {c.value}
                     </Nav.Link>
                   ))
