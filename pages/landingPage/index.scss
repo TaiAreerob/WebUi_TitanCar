@@ -70,7 +70,19 @@ $JoinSanarmBookingShadeColorRevert: linear-gradient(90deg, $blackTheme 10%, $red
         transform: translateY(-50%);
     }
 }
-
+.singout-color{
+    color:red;
+}
+.userInfo {
+    box-shadow: 0 0 6px #70707040;
+    margin: 3px;
+    margin-top: 2vh;
+    border-radius: 6px;
+    padding: 12px 0;
+    &__useImage {
+        text-align: center;
+    }
+}
 .ComingSoon {
     background: #bc4d4d;
     color: white;
