@@ -1,0 +1,29 @@
+@import '../../global/variable.scss'; 
+ .LogoBar {
+    padding: 10px;
+   @include joinSanarmShadeBackgroundColor();
+    height: 55px;
+    .icon{
+        width: 40px;
+        margin-bottom: 5px;
+    }
+    .wrapper-userProfile {
+        float: right;
+        font-size: 12px;
+        .userDetail {
+            margin: initial;
+            display: inline-block;
+            padding: 0 5px;
+            &--name {
+                color: white;
+            }
+            &--wallet {
+                float:right;
+                color: yellow;
+            }
+        }
+        .UserImage {
+            float: right;
+        }
+    }
+}

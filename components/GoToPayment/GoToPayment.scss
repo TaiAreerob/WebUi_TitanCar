@@ -1,0 +1,15 @@
+.GoToPayment {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 0.5px solid rgba(255,0,0,0.8);
+    color: red;
+
+    &__link {
+        padding: 0 4px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+   
+}

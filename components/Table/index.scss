@@ -1,0 +1,56 @@
+$backgroundColor: rgba(255,255,255,1);
+$tableColor: #36304a;
+
+.PhaitoniousTable {
+    background: $backgroundColor;
+    margin-bottom: 0;
+    color: rgb(128, 128, 128);
+    border: 0.5px solid #d8d8d8;
+
+    thead, tfoot {
+        background: $tableColor;
+        color: white;
+        border: 0.5px solid rgb(128, 128, 128);    
+    } 
+    
+    &.table {
+        position: relative;
+        thead {
+            td {
+                text-align: center;
+                white-space: nowrap;
+            }
+        }
+        td {
+            text-align: left;
+            border-top: none;
+            &:last-child {
+                text-align: right;
+            }
+        }
+
+    }
+
+    &__Loader {
+        background: $backgroundColor;
+        padding: 30px;
+    }
+}
+
+.SmartTable {
+    &__Pagination {
+        padding: 10px;
+        text-align: center;
+    }
+    &__PaginationItem {
+        border: 0.5px solid $tableColor;
+        background: white;
+        cursor: pointer;
+        padding: 6px 10px;
+        
+        &.active, &:hover {
+            color: white;
+            background: $tableColor;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+$textColor: #b0b0b0; 
+
+.roomDetialSectioin {
+    font-size: 15px;
+    text-align: left;
+    padding: 0 15px;
+    color: $textColor;
+    .time,
+    .close-time {
+        padding-right: 0; 
+        display: inline-block;
+    }
+    .minimum,
+    .maximum {
+        padding-right: 10px; 
+        display: inline-block;
+    }
+    .date {
+        font-weight: bold;
+        color: #5a5a5a;
+    }
+
+    .contact-number {
+        color: #009999;
+    }
+
+    .fieldAndValue {
+        &__value {
+            color: darken($textColor, 45%);
+        }
+    }
+}

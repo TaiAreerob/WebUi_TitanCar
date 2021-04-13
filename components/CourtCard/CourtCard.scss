@@ -1,0 +1,125 @@
+@import '../../global/variable.scss';
+
+.card{
+    border-radius:10px 10px 0px 0px !important;
+    .button{
+        margin-top: 10px;
+        background: #3C997D;
+        margin-left:3%;
+        width:65%;
+    }
+    .detailcourt{
+        position: absolute;
+        bottom: 4px;
+        right: 10px;
+        text-align: right;
+        padding: 0;
+    }
+    .reserver-padding{
+        padding-right: 0px;
+    }
+    .reserver-detal{
+        padding:2px;
+        
+        border-radius:30px 30px 30px 30px !important;
+        color: #fff;
+        @include joinSanarmShadeBackgroundColor();
+        border-color: #3eb6ed;
+        font-size: 10px;
+        min-width: 120px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: -10px;
+    }
+   
+    .lh-05{
+        line-height: 0.9;
+    }
+    .card{
+        z-index: -1;
+
+       
+    }
+    .card-bg{
+        height: 150px;
+        overflow: hidden;
+       
+    }
+    .card-img{
+        width:100%;
+        height: 250px;
+        border-radius:10px 10px 0px 0px ;
+       
+       
+    }
+    .card-footer{
+        border-radius:10px 10px 0px 0px !important ;
+        position: absolute;
+        padding: 5px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.6);
+        padding:10px 10px;
+    }
+    .card-footer .wrapper{
+        margin-top: 10px;
+    }
+    
+    .card-footer .header{
+        font-size: 1.0rem;
+        font-weight: 400;
+        color:#FAE232;
+            width: 100%;
+            display: inline-block;
+            line-height:0.9;
+    }
+    .card-footer .option{
+        font-size: 1.0rem;
+        color: $sanarmbad-color-blue;
+    }
+    .card-footer .detail{
+        font-size: 12px;
+        font-weight: 300;
+        color: white
+    }
+     
+   .courtAddress {
+        text-align: right;
+
+        &--location {
+            cursor: pointer;
+            padding: 3px 5px;
+            margin: 0 5px;
+            color: #e1e1e1;
+            background: #3C997D;
+            border-radius: 10px;
+        }    
+
+        &--district {
+           color: #c9c998;
+           font-size: 12px;
+           border: 1px solid;
+           padding: 0 10px;
+           border-radius: 10px;
+           overflow: hidden;
+           text-overflow: ellipsis;
+           white-space: nowrap; 
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .card-bg{
+            min-height: 300px;
+        }
+        .card-footer .header{
+            font-size: 1.2rem;
+        }
+        .card-footer .option{
+            font-size: 0.8rem;
+        }
+        .card-footer .detail{
+            font-size: 0.5rem;
+        }
+    }
+}

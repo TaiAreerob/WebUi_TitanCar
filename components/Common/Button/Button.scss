@@ -1,0 +1,46 @@
+@import '../../../global/variable.scss';
+
+.JsnButton {
+    &.btn {
+        border: none;
+        @include background-default();
+    }
+
+    &.btnDefault {
+        @include joinSanarmShadeBackgroundColor();
+    }
+
+    &.JsnButtonRounded {
+        border-radius: 20px;
+    }
+
+    
+    &.btnDestructive{
+        @include background-destructive();
+        color:white
+
+    }
+    &.btnSuccess{
+        @include background-default();
+        color:white
+    }
+    &.btnNone{
+        background: unset !important
+    }
+}
+
+button{
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    border: none;
+
+    //@extend %gradient-background;
+    @include background-default();
+
+    
+}
+.round{
+    border-radius: 3rem;
+}

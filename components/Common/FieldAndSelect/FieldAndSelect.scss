@@ -1,0 +1,19 @@
+@import '../../../global/variable.scss';
+
+.fieldAndSelect {
+
+    &__field {
+        padding-right: 5px;
+    }
+
+    &__value { 
+        padding: 0 5px;
+    }
+
+    &.half{
+        max-width: 50%;
+        width: 100%;
+        display: inline-block;
+        margin-bottom:15px;
+    }
+}

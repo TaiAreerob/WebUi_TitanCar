@@ -1,0 +1,10 @@
+$primaryColor : #123;
+
+.btn--backPage {
+    margin: 0 10px;
+    font-size: 20px;
+    color: $primaryColor;
+    &:hover {
+        color: lighten($primaryColor, 10%);
+    }    
+}

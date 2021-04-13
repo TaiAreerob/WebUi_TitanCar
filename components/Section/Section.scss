@@ -1,0 +1,15 @@
+.section {
+    background: white;
+    border-bottom: 0.5px solid #b6b6b6;
+    margin: 0 15px;
+    margin-bottom: 10px;
+    &.content-center {
+        padding: 10px 0;
+        text-align: center;
+    }
+    &.last-section {
+        border-radius: 0 0 16px 16px;
+        box-shadow: 0 4px 2px -2px rgba(112,112,112,0.3);
+        min-height: 50px;
+    }
+}

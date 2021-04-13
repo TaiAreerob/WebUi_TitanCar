@@ -7,7 +7,7 @@ const NavBar = () => (
       <button className="btn btn-outline-success" type="button">Search</button>
       <Link href="/"><a>home</a></Link>
       <Link href="/about"><a>about</a></Link>
-      <Link href="https://www.facebook.com/Taiareerob/"><a>Facebook page</a></Link>
+      <Link href="https://www.facebook.com/Sanarmbad-193609591520796/"><a>Facebook page</a></Link>
       <Link href="/profile"><a>profile</a></Link>
       <style jsx>
       {`
