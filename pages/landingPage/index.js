@@ -20,7 +20,7 @@ class LandingPage extends Component {
             playerName: '',
             playerImg: '',
             playTimes: 0,
-            money: 0,
+            money: 1,
             rooms: [],
             bookings: [],
         }
