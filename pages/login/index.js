@@ -106,6 +106,7 @@ class SignInScreen extends Component {
           <FieldAndInput
                     inputType="email"
                     title="ชื่อผู้ใช้/รหัสนักศึกษา"
+                    // placeholder ="ชื่อผู้ใช้/รหัสนักศึกษา"
                     isRequired={true}
                     value={this.state.email}
                     onChange={(value) => { this.setState({ email: value }) }}
@@ -114,8 +115,8 @@ class SignInScreen extends Component {
                     inputType="email"
                     title="รหัสผ่าน"
                     isRequired={true}
-                    value={this.state.email}
-                    onChange={(value) => { this.setState({ email: value }) }}
+                    value={this.state.password}
+                    onChange={(value) => { this.setState({ password: value }) }}
                 />
           {/* <Row>
             <Col xs={{ size: 10, offset: 1 }} sm={{ size: 4, offset: 4 }} className="text-center mt-4 ">

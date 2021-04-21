@@ -42,7 +42,7 @@ class LandingPage extends Component {
         if (this.isYourProfile()) {
             return (
                 <Link href="/">
-                    <span className="singout-color" onClick={this.singout}>Signout </span>
+                    <span className="singout-color" onClick={this.singout}>Home pages</span>
                     
                 </Link>
                 
@@ -56,29 +56,12 @@ class LandingPage extends Component {
         </div>
     }
 
-    renderSanarmbadShop = () => {
-        return <Row>
-            <Col className="icon-fed " xs={{ size: 9 }}>
-                <Link href="/landingPage">
-                    <div className="ActionBar">
-                        <Button className="ActionBar__BookButton" onClick={() => { console.log("landingPage") }}>Sanarm Shop</Button>
-                    </div>
-                </Link>
-            </Col>
-        </Row>
-    }
+    
 
     render() {
         return (
             <div>
-            <img 
-            id = "profile"
-            alt = "Profile picture"
-            src = {firebase.auth().currentUser.photoURL}/>
-            <Col xs={5} className="userInfo__useImage" >
-                {this.renderSignoutButton()}
-                
-            </Col>
+            
             </div>
         )
     }
