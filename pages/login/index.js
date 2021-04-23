@@ -98,7 +98,7 @@ class SignInScreen extends Component {
         <Container>
           <Row>
             <Col xs={{ size: 10, offset: 1 }} sm={{ size: 4, offset: 5 }}>
-              <p className="sub-title mt-4 ">
+                  <p className="sub-title mt-4 ">
                 TITAN
                   </p>
             </Col>
@@ -132,7 +132,6 @@ class SignInScreen extends Component {
       </div>
     );
   }
-
 }
 
 const mapDispatchToProps = dispatch => ({

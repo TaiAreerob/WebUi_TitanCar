@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/runtime-corejs2": "^7.13.10",
+    "@material-ui/core": "^4.11.3",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "autoprefixer": "^10.2.5",
@@ -34,7 +35,9 @@
     "react-firebaseui": "^4.1.0",
     "react-ga": "^2.5.7",
     "react-geolocated": "^3.0.1",
+    "react-icons": "^4.2.0",
     "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^2.1.5",
     "react-spinners": "^0.6.1",
     "react-toastify": "^7.0.3",

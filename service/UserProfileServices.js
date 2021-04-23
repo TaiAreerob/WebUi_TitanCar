@@ -6,6 +6,7 @@ export const updateUserProfile = () => {
         const user = getUserCookies()
         ajaxCallGet(`users/${user.id}`, (updatedUser) => {
             setUserCookies(updatedUser.data)
+            console.log(updatedUser.data)
         })
     }
 }

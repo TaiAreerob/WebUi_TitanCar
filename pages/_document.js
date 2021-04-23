@@ -17,6 +17,7 @@ export default class MyDocument extends Document {
                     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossOrigin="anonymous"></script>
                     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossOrigin="anonymous"></link>
                     <link rel="manifest" href="/static/manifest.webmanifest"></link>
+                    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
                     <style>
                         {`
                         body {
