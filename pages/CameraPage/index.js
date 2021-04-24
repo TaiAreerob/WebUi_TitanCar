@@ -13,9 +13,7 @@ import { JoinSanarmContact } from '../../components/JoinSanarmContact/JoinSanarm
 import { getUserCookies, removeUserCookies, setUserCookies } from '../../service/cookiesServices'
 import NaviBar from '../../components/NaviBar/NaviBar'
 
-
-
-class LandingPage extends Component {
+class CameraPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -57,10 +55,6 @@ class LandingPage extends Component {
         </div>
     }
 
-    
-
-
-
     // renderSanarmbadShop = () => {
     //     return <Row>
     //         <Col className="icon-fed " xs={{ size: 9 }}>
@@ -76,25 +70,18 @@ class LandingPage extends Component {
     render() {
         return (
             <div>
-            {/* <img 
-            id = "profile"
-            alt = "Profile pictusre"
-            src = {firebase.auth().currentUser.photoURL}/> */}
             
             <div className = ""> {this.renderComingSoon()} </div>
                 <Col xs={5} className="userInfo__useImage" >
                                 {this.renderSignoutButton()} 
                 </Col> 
-            
-                
-                    <NaviBar/>
-                    sdfsdlfks
-              
+                CameraPage
+                <NaviBar/>
                 
             </div>
         )
     }
 }
 
-export default withRouter(LandingPage)
+export default withRouter(CameraPage)
 

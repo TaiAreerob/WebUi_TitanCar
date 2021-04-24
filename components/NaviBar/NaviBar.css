@@ -1,23 +1,14 @@
 .menu-items {
     width: 100%;
     background-color: #060b26;
-    height: 45px;
+    justify-content: space-around;
     display: flex;
-    justify-content: start;
-    align-items: center;
+    position: fixed;
+    font-size: 40px;
+    height: 50px;
+    bottom: 0;
+    color: aliceblue;
   }
 
-/* .NaviBar {
-    background-color: #e3e4ec;
-    height: 80px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  } */
 
-.navi{
-    background-color: #060b26;
-    height: 80px;
-   
-  }
 

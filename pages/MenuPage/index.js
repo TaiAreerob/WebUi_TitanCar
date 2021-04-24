@@ -11,7 +11,9 @@ import Link from 'next/link'
 import { updateUserProfile } from '../../service/UserProfileServices'
 import { JoinSanarmContact } from '../../components/JoinSanarmContact/JoinSanarmContact'
 import { getUserCookies, removeUserCookies, setUserCookies } from '../../service/cookiesServices'
-class LandingPage extends Component {
+import NaviBar from '../../components/NaviBar/NaviBar'
+
+class MenuPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -42,7 +44,7 @@ class LandingPage extends Component {
         if (this.isYourProfile()) {
             return (
                 <Link href="/">
-                    <span className="singout-color" onClick={this.singout}>Home pages</span>
+                    <span className="singout-color" onClick={this.singout}>Sign out</span>
                     
                 </Link>
                 
@@ -61,11 +63,19 @@ class LandingPage extends Component {
     render() {
         return (
             <div>
-            
+                
+                <div className = ""> {this.renderComingSoon()} </div>
+                <Col xs={5} className="userInfo__useImage" >
+                                {this.renderSignoutButton()} 
+                </Col> 
+                MenuPage
+                <NaviBar/>
             </div>
+
+            
         )
     }
 }
 
-export default withRouter(LandingPage)
+export default MenuPage
 

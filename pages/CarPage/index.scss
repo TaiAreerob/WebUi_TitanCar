@@ -1,0 +1,128 @@
+@import '../../global/variable.scss';
+$redTheme: #bc4d4d;
+$blackTheme: #363434;
+$JoinSanarmBookingShadeColorRevert: linear-gradient(90deg, $blackTheme 10%, $redTheme 60%);
+.landingPage {
+  
+        padding: 0px;
+        
+    }
+
+.UserTraffic {
+    font-size: 11px;
+    text-align: center;
+    color: #aaa;
+}
+
+.slider-control-centerright{
+    opacity: 0;
+}
+.slider-control-centerleft{
+    opacity: 0;
+}
+.icon-fed{
+    margin-left: 5%;
+    box-shadow: 5px 5px 15px 5px rgba(50, 50, 50, .3);
+    border-radius: 15px;
+    margin-top:7%;
+    margin-left: auto;
+    margin-right: auto;   
+    z-index: 100;
+    overflow: hidden;
+    &--Promotion{
+        position: absolute;
+            top: 0;
+            right: -13px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-right: 30px;
+            padding-left: 30px;
+            background: gainsboro;
+            transform: rotate(35deg) translateX(30px) translateY(2px);
+            &--red {
+                background: red;
+                color: white;
+            }
+        }
+}
+.icon-test{
+    width:50%;
+    margin:15% auto;
+    display:block;
+}
+.icon-text{
+    font-size: 20px;
+    text-align: center;
+
+}
+.icon-text-p{
+    padding-top: 15%;
+
+}
+.newfeature{
+    opacity: 0.4;
+    position:relative;
+    .ComingSoon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0px;
+        transform: translateY(-50%);
+    }
+}
+.singout-color{
+    color:red;
+}
+.userInfo {
+    box-shadow: 0 0 6px #70707040;
+    margin: 3px;
+    margin-top: 2vh;
+    border-radius: 6px;
+    padding: 12px 0;
+    &__useImage {
+        text-align: center;
+    }
+}
+.ComingSoon {
+    background: #bc4d4d;
+    color: white;
+    text-align: center;
+}
+
+.LandingPage {
+    margin-bottom: 50px;
+    &__Shop {
+       margin-top: 10px; 
+    }
+    &__ShopButton {
+        width: 100%;
+    }
+}
+
+
+
+.ActionBar {
+    
+    background: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    button {
+        
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 0 5px;
+        font-size: 20px;
+        width: 90%;
+        background: $JoinSanarmBookingShadeColorRevert;
+    }
+
+    &__BookButton {
+        
+        background: $JoinSanarmBookingShadeColorRevert !important;
+        color: white;
+    }
+}

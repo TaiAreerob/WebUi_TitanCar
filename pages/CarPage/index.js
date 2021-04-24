@@ -14,8 +14,7 @@ import { getUserCookies, removeUserCookies, setUserCookies } from '../../service
 import NaviBar from '../../components/NaviBar/NaviBar'
 
 
-
-class LandingPage extends Component {
+class CarPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -57,10 +56,6 @@ class LandingPage extends Component {
         </div>
     }
 
-    
-
-
-
     // renderSanarmbadShop = () => {
     //     return <Row>
     //         <Col className="icon-fed " xs={{ size: 9 }}>
@@ -76,19 +71,15 @@ class LandingPage extends Component {
     render() {
         return (
             <div>
-            {/* <img 
-            id = "profile"
-            alt = "Profile pictusre"
-            src = {firebase.auth().currentUser.photoURL}/> */}
+            
             
             <div className = ""> {this.renderComingSoon()} </div>
                 <Col xs={5} className="userInfo__useImage" >
                                 {this.renderSignoutButton()} 
                 </Col> 
-            
+                CarPage
+                <NaviBar/>
                 
-                    <NaviBar/>
-                    sdfsdlfks
               
                 
             </div>
@@ -96,5 +87,5 @@ class LandingPage extends Component {
     }
 }
 
-export default withRouter(LandingPage)
+export default withRouter(CarPage)
 
