@@ -16,8 +16,8 @@ import NaviBar from '../../components/NaviBar/NaviBar'
 // import car from '../../car.png'
 
 const ImagePath = {
-    light_on0 : '../../image/light_on0.png',
-    light_on1 : '../../image/light_on1.png'
+    light_on0 : '/static/assets/car.png',
+    light_on1 : '/static/assets/car.png'
 }
 
 class CarPage extends Component {
