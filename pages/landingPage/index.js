@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'next/router'
-import LogoBar from '../../components/LogoBar/LogoBar'
+// import LogoBar from '../../components/LogoBar/LogoBar'
 import classnames from 'classnames'
 import './index.scss'
 import Carousel from 'nuka-carousel';
@@ -14,6 +14,8 @@ import { getUserCookies, removeUserCookies, setUserCookies } from '../../service
 import NaviBar from '../../components/NaviBar/NaviBar'
 
 
+// import { Map } from '../../components/Map/Map'
+
 
 class LandingPage extends Component {
     constructor(props) {
@@ -22,21 +24,46 @@ class LandingPage extends Component {
             displayID: '',
             playerId: 0,
             playerName: '',
-            playerImg: '',
+            playerImg: [],
             playTimes: 0,
             money: 1,
             rooms: [],
             bookings: [],
+            
         }
+        
     }
-
+ 
     singout = () => {
         firebase.auth().signOut();
         removeUserCookies();
     }
-    componentDidMount() {
-        updateUserProfile()
+    componentDidMount = () => {
+        const userCookies = "";
+        
+        return(     
+            console.log(userCookies)                     
+        )
+        
     }
+    // imageUrl = () => {
+    //     const userCookies = getUserCookies();
+    //     this.setState({playerImg : userCookies.imageUrl})
+    //     return(
+            
+    //         <div> 
+    //             <img id= ""
+    //         alt="profile picture"
+    //         src= {this.state.playerImg}
+    //       /> 
+
+    //       </div>
+             
+            
+    //     )
+        
+    // }
+
     isYourProfile = () => {
         const userCookies = getUserCookies()
         return true
@@ -57,10 +84,6 @@ class LandingPage extends Component {
         </div>
     }
 
-    
-
-
-
     // renderSanarmbadShop = () => {
     //     return <Row>
     //         <Col className="icon-fed " xs={{ size: 9 }}>
@@ -76,19 +99,20 @@ class LandingPage extends Component {
     render() {
         return (
             <div>
-            {/* <img 
-            id = "profile"
-            alt = "Profile pictusre"
-            src = {firebase.auth().currentUser.photoURL}/> */}
+            
             
             <div className = ""> {this.renderComingSoon()} </div>
                 <Col xs={5} className="userInfo__useImage" >
                                 {this.renderSignoutButton()} 
                 </Col> 
             
-                
+            <div>
+
+            </div>
+                    
+                   
                     <NaviBar/>
-                    sdfsdlfks
+                    
               
                 
             </div>

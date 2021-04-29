@@ -12,22 +12,38 @@ import { updateUserProfile } from '../../service/UserProfileServices'
 import { JoinSanarmContact } from '../../components/JoinSanarmContact/JoinSanarmContact'
 import { getUserCookies, removeUserCookies, setUserCookies } from '../../service/cookiesServices'
 import NaviBar from '../../components/NaviBar/NaviBar'
+// import  '../../image/light_on0.png'
+// import car from '../../car.png'
 
+const ImagePath = {
+    light_on0 : '../../image/light_on0.png',
+    light_on1 : '../../image/light_on1.png'
+}
 
 class CarPage extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            displayID: '',
-            playerId: 0,
-            playerName: '',
-            playerImg: '',
-            playTimes: 0,
-            money: 1,
-            rooms: [],
-            bookings: [],
+    // constructor(props) {
+    //     super(props)
+    //     this.state = {
+    //         displayID: '',
+    //         playerId: 0,
+    //         playerName: '',
+    //         playerImg: '',
+    //         playTimes: 0,
+    //         money: 1,
+    //         rooms: [],
+    //         bookings: [],
+    //     }
+        
+    // }
+state = {
+    open: true
         }
-    }
+    toggleImage = () => {
+        this.setState(state => ({ open: !state.open }))
+      }
+
+    getImageName = () => this.state.open ? 'light_on0' : 'light_on1'
+    
 
     singout = () => {
         firebase.auth().signOut();
@@ -69,19 +85,19 @@ class CarPage extends Component {
     // }
 
     render() {
+        const imageName = this.getImageName();
         return (
             <div>
             
             
             <div className = ""> {this.renderComingSoon()} </div>
-                <Col xs={5} className="userInfo__useImage" >
-                                {this.renderSignoutButton()} 
-                </Col> 
+                 
                 CarPage
+                <span>
+                <img style={{maxWidth: '50px'}} src={ImagePath[imageName]} onClick={this.toggleImage} />
+                </span>
                 <NaviBar/>
-                
-              
-                
+               
             </div>
         )
     }

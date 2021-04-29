@@ -1,12 +1,14 @@
-import React, { Component }  from 'react';
+import React from 'react';
 import { Container } from 'reactstrap'
 import { connect } from 'react-redux'
 import Link from 'next/link'
 import UserImage from '../UserImage/UserImage'
-import './LogoBar.scss'
+//import './LogoBar.scss'
+const mapStateToProps = (state) =>( {
+    user: {...state.userProfileReducer},
+})
 
-
-class LogoBar extends React.Component {
+class UserInfo extends React.Component {
     
     renderProfile = () => {
         const { user } = this.props
@@ -15,13 +17,13 @@ class LogoBar extends React.Component {
         const imageUrl =  user ?  user.imageUrl : ''
         const id =  user ?  user.id : ''
         return (
-            <div className="wrapper-userProfile">
+            <div className="wrapper-userInfo">
                 <div className="userDetail">
                     <div className="userDetail--name">
                         {displayName}
                     </div>
                     <div className="userDetail--wallet">
-                    {coin} Bath
+                    {/* {coin} Bath */}
                       
                     </div>
                 </div>
@@ -40,17 +42,15 @@ class LogoBar extends React.Component {
     render() {
         return (
             <Container className="LogoBar">
-                <Link href="/landingPage">
+                {/* <Link href="/landingPage">
                 <img className ="icon" src={"/static/assets/logo-web.png"} />
-                </Link>
+                </Link> */}
                 {this.renderProfile()}
             </Container>
         )
     }
 }
 
-const mapStateToProps = (state) =>( {
-    user: {...state.userProfileReducer},
-})
 
-export default connect(mapStateToProps)(LogoBar)
+
+export default connect(mapStateToProps)(UserInfo)

@@ -12,6 +12,7 @@ import { updateUserProfile } from '../../service/UserProfileServices'
 import { JoinSanarmContact } from '../../components/JoinSanarmContact/JoinSanarmContact'
 import { getUserCookies, removeUserCookies, setUserCookies } from '../../service/cookiesServices'
 import NaviBar from '../../components/NaviBar/NaviBar'
+import UserInfo from '../../components/UserInfo/UserInfo'
 
 class MenuPage extends Component {
     constructor(props) {
@@ -68,7 +69,8 @@ class MenuPage extends Component {
                 <Col xs={5} className="userInfo__useImage" >
                                 {this.renderSignoutButton()} 
                 </Col> 
-                MenuPage
+
+                <UserInfo/>
                 <NaviBar/>
             </div>
 

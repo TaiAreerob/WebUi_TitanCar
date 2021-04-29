@@ -9,9 +9,9 @@ const getEndpoint = () => {
         case 'production':
             return 'https://joinsanarm.com/api/'
         case 'preprod':
-            return 'https://dev.joinsanarm.com/api/'
+            return 'https://joinsanarm.com/api/'
         default:
-            return 'https://dev.joinsanarm.com/api/'
+            return 'https://joinsanarm.com/api/'
     }
 
 }

@@ -111,13 +111,13 @@ class SignInScreen extends Component {
                     value={this.state.email}
                     onChange={(value) => { this.setState({ email: value }) }}
                 />
-                 <FieldAndInput
-                    inputType="email"
+          <FieldAndInput
+                    inputType="password"
                     title="รหัสผ่าน"
                     isRequired={true}
                     value={this.state.password}
                     onChange={(value) => { this.setState({ password: value }) }}
-                />
+          />
           {/* <Row>
             <Col xs={{ size: 10, offset: 1 }} sm={{ size: 4, offset: 4 }} className="text-center mt-4 ">
               <img src="image" width="60%"></img>
