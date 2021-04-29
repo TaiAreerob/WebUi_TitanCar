@@ -1,0 +1,12 @@
+.CrossOutText {
+    position: relative;
+    display: inline-block;
+    &__Line {
+        position: absolute;
+        border-top: solid 1px;
+        width: 130%;
+        top: 50%;
+        left: -15%;
+        transform: rotate(-12deg);
+    }
+}

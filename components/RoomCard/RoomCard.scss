@@ -1,0 +1,159 @@
+@import '../../global/variable.scss';
+
+$font2ndColor: #b5b5b5;
+$primaryGreen: #3C997D;
+
+.roomCard {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=0, Color=#707070)";/*IE 8*/
+    -moz-box-shadow: 0 0 6px #70707040;/*FF 3.5+*/
+    -webkit-box-shadow: 0 0 6px #70707040;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 0 0 6px #70707040;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+
+    position: relative;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: white;
+    overflow: hidden;
+    
+    .roomCardPadding {
+        padding: 10px;
+    }
+
+    .roomTitle {
+        color: $primaryGreen;
+        font-size: 18px;
+        margin: 0;
+        .courtName { 
+            font-weight: normal;
+            white-space: nowrap;
+            min-width: 50px;
+            max-width: 51%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .price { 
+            font-size: 22px;
+            color: #41be6d;
+            float: right;
+            &--description {
+                font-size: 12px;
+                color: #707070;
+            }
+        }
+    }
+
+    .roomDescription {
+        
+        font-size: 14px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 0.5px solid #cccccc;
+        position: relative;
+        .DiscountBadge {
+            position: absolute;
+            right: 0;
+        }
+        &--name {
+            margin-bottom: 0;
+        }
+        &--detail {
+            font-weight: 100;
+            color: $font2ndColor;
+            margin-bottom: 0;
+        }
+        &--bookedCourtNumber {
+            margin: 0 5px;
+            padding: 0 10px;
+            background: #313131;
+            color: #cccccc;
+            border-radius: 10px;
+        }
+        .courtAddress {
+            color: #4b4945;
+            font-size: 12px;
+            border: 1px solid;
+            padding: 0 10px;
+            border-radius: 10px;
+            @include maxWidthDotDotDot(70%);
+        }
+    }
+
+    .roomStatus {
+        background: #c20000;
+        border-radius: 20px;
+        padding: 0 10px;
+        color: white;
+    }
+
+    .roomMembers {
+        float: right;
+        display: inline-block;
+        .playerAmount {
+            padding-left: 5px; 
+        }
+    }
+
+    .player {
+        margin: 0 -3px;
+        display: inline-block;
+        text-align: center; 
+        &__name {
+            color: $font2ndColor;
+            font-size: 10px;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            width: 50px;
+        }
+    }
+
+    .roomDetail {
+        font-size: 10px;
+        font-weight: 100;        
+        color: #313131;
+        .closeTime {
+            font-size: 12px;
+            font-weight: 500;
+            float: none;
+            border: none;
+        }
+        span {
+            margin: 0 2px;
+            padding-right: 3px;
+            border-right: 1px solid #aaaaaa;
+            
+
+            &:last-child {
+                border: none;
+            }
+
+        }
+    }
+
+    &__Status {
+        text-align: center;
+        color: white;
+        background: $primaryGreen;
+    }
+
+    &__tag {
+        position: absolute;
+        top: 0;
+        right: -5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-right: 30px;
+        padding-left: 50px;
+        background: gainsboro;
+        transform: rotate(35deg) translateX(20px) translateY(-4px);
+        &--red {
+            background: red;
+            color: white;
+        }
+        &--green {
+            background: green;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import '../../../global/variable.scss';
+
+.input{
+    border:1px solid #3c997d !important;
+}
+
+.fieldAndInput {
+    position: relative;
+    margin-bottom: 15px;
+  
+    &__field {
+        padding-right: 5px;
+       
+    }
+
+    &__value { 
+        padding: 0 5px;
+    }
+
+    &.half{
+        max-width: 50%;
+        width: 100%;
+        display: inline-block;
+    }
+    &.player{
+        max-width: 48%;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .invalidInput {
+        border-color: red;
+        box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+    }
+
+    input[type="date"] {
+        color:#495057;
+    }
+
+    &__dateValue {
+        position: absolute;
+        bottom: 0;
+        z-index: 11;
+        left: 0;
+        right: 0;
+        padding: 7px 20px;
+        pointer-events: none;
+    }
+}

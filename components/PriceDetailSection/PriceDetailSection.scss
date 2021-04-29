@@ -1,0 +1,52 @@
+@import '../../global/variable.scss';
+
+.priceDetailSection {
+    font-size: 16px;
+    padding: 15px;
+    padding-bottom: 0;
+    .fieldAndValue {
+        &__value {
+            color: orange;
+        }
+    }
+
+    .total-price {
+        text-align: center;
+        .fieldAndValue {
+            &__value {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .player-amount {
+        text-align: center;
+        padding: 8px 0px;
+        &__field {
+            float: left;
+            margin-right: 10px;
+            color: #5bc6fb;
+            font-weight: 500;
+        }
+        &__value {
+            @include joinSanarmShadow();
+            margin: 0 10px;
+            padding: 5px 25px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    }
+    .btn {
+        background: orange;
+        border-radius: 50%;
+        border: none;
+        padding: 3px 8px;
+        &--plus {
+            background: $theme-main-color;
+        }
+        &--minus {
+            background: $theme-red-light-color;
+        }
+    }
+}

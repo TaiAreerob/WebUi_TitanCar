@@ -1,0 +1,50 @@
+$theme-main-color: #009999;
+$theme-secondary-color: #C6D198;
+$theme-gradient-degree: 298deg;
+
+$theme-red-light-color: #dc3545;
+$theme-red-dark-color: #861621;
+
+$sanarmbad-color-blue: #3eb5ee;
+$sanarmbad-color-greenBlue: #39d8dd;
+
+
+@mixin background($degree, $from-color, $to-color){
+    background: -moz-linear-gradient($degree, $to-color 0, $from-color 100%);/* FF3.6+ */
+    background: -webkit-gradient(linear, $degree, color-stop(0, $to-color ), color-stop(100%, $from-color));/* Chrome,Safari4+ */
+    background: -webkit-linear-gradient($degree, $to-color 0, $from-color 100%);/* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient($degree, $to-color  0, $from-color 100%);/* Opera 11.10+ */
+    background: -ms-linear-gradient($degree, $to-color  0, $from-color 100%);/* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); /* for IE */
+    background: linear-gradient($degree, $to-color 8 0, $from-color 100%);/* W3C */
+}
+
+@mixin background-default() {
+    @include background($theme-gradient-degree, $theme-main-color, $theme-secondary-color);    
+}
+
+
+@mixin background-destructive() {
+    @include background($theme-gradient-degree, $theme-red-dark-color, $theme-red-light-color);
+}
+
+@mixin joinSanarmShadeBackgroundColor() {
+    background: linear-gradient(90deg, $sanarmbad-color-greenBlue 10%, $sanarmbad-color-blue 60%);
+}
+
+@mixin joinSanarmShadow {
+    box-shadow: 0 0 6px #70707040;
+}
+
+@mixin maxWidthDotDotDot($maxWidth) {
+    max-width: $maxWidth;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+@mixin joinSanarmButton() {
+    @include joinSanarmShadeBackgroundColor();
+    border: none;
+}

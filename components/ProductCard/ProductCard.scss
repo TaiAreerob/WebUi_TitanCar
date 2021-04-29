@@ -1,0 +1,65 @@
+@import "../../global/variable.scss";
+
+.ProductCard {
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+
+    &__Brand {
+        border-radius: 8px;
+        color: #fff;
+        background-color: $sanarmbad-color-blue;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    &__TopSection {
+        height: 66%;
+    }
+
+    &__BottomSection {
+    }
+
+    &__Button {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    &__Row {
+        height: 100%;
+    }
+
+    &__Info {
+        height: calc(100% - 10px);
+        background-color: #fff;
+        margin: 5px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+
+    &__Detail {
+        font-size: 12px;
+        &--right {
+            float: right;
+        }
+    }
+
+    &__Title {
+
+    }
+
+    &__SubTitle {
+        color: $theme-red-light-color;
+        margin: 0;
+    }
+    
+    &__CrossOut {
+        margin-left: 50px;
+        color: #888;
+        font-size: 12px;
+        text-align: center;
+    }
+}

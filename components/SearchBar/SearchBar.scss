@@ -1,0 +1,37 @@
+.SearchBar {
+    &__Container {
+        position: relative;
+        background: white;
+        padding: 10px 0;
+    }
+    .fas.fa-search {
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__input{
+        &.searchbox {
+            display: inline-block;
+            width: 70%;
+            padding-left: 30px;
+            border-radius: 20px;
+        }
+    }
+
+    .btn-createRoom {
+        position: absolute;
+        transform: translateX(-55px);
+        border-radius: 20px;
+        height: 40px;
+    }
+    .btn-payment {
+        position: absolute;
+        transform:translateX(40px);
+        background: #3C997D;
+        border-radius: 20px;
+        height: 40px;
+    }
+   
+}
