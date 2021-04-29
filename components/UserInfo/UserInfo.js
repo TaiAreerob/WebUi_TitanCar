@@ -3,7 +3,7 @@ import { Container } from 'reactstrap'
 import { connect } from 'react-redux'
 import Link from 'next/link'
 import UserImage from '../UserImage/UserImage'
-//import './LogoBar.scss'
+import './UserInfo.css'
 const mapStateToProps = (state) =>( {
     user: {...state.userProfileReducer},
 })
@@ -13,40 +13,36 @@ class UserInfo extends React.Component {
     renderProfile = () => {
         const { user } = this.props
         const displayName =  user ? user.displayName :''
-        const coin =  user ? user.coin : ''
         const imageUrl =  user ?  user.imageUrl : ''
         const id =  user ?  user.id : ''
         return (
-            <div className="wrapper-userInfo">
-                <div className="userDetail">
-                    <div className="userDetail--name">
-                        {displayName}
-                    </div>
-                    <div className="userDetail--wallet">
-                    {/* {coin} Bath */}
-                      
-                    </div>
-                </div>
+            <div className="content-userProfile">
                 
-                   
-                        <UserImage isRounded width={35} height={35}
+                    <div className="avatar">
+                        {/* {displayName} */}
+                        <UserImage isRounded width={80} height={80}
                             userid={id}
                             imgURL={imageUrl}
                         />
-               
-             
+                        <ul className="content">
+                        {/* {coin} Bath */}
+                        {displayName}
+                        </ul>
+                    </div>
+
             </div>
         )
     }
 
     render() {
         return (
-            <Container className="LogoBar">
+            // <Container className="LogoBar">
+            <div className="UserInfo">
                 {/* <Link href="/landingPage">
                 <img className ="icon" src={"/static/assets/logo-web.png"} />
                 </Link> */}
                 {this.renderProfile()}
-            </Container>
+            </div>
         )
     }
 }

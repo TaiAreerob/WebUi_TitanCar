@@ -16,8 +16,8 @@ import NaviBar from '../../components/NaviBar/NaviBar'
 // import car from '../../car.png'
 
 const ImagePath = {
-    light_on0 : '../../image/light_on0.png',
-    light_on1 : '../../image/light_on1.png'
+    light_on0 : '/static/assets/car.png',
+    light_on1 : '/static/assets/car.png'
 }
 
 class CarPage extends Component {
@@ -93,9 +93,10 @@ state = {
             <div className = ""> {this.renderComingSoon()} </div>
                  
                 CarPage
-                <span>
-                <img style={{maxWidth: '50px'}} src={ImagePath[imageName]} onClick={this.toggleImage} />
-                </span>
+                {/* <span>
+                <img style={{maxWidth: '50px'}} src="/static/assets/logo-48x48.png" onClick={this.toggleImage} />
+                <img src = "/public/assets/car.png" alt ="pic_car"/>
+                </span> */}
                 <NaviBar/>
                
             </div>

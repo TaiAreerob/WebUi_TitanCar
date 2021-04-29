@@ -43,7 +43,7 @@ class CameraPage extends Component {
         if (this.isYourProfile()) {
             return (
                 <Link href="/">
-                    <span className="singout-color" onClick={this.singout}>Signout </span>                 
+                    <button className="singout-color" onClick={this.singout}>Signout </button>                 
                 </Link>                
             )
         }
@@ -72,9 +72,9 @@ class CameraPage extends Component {
             <div>
             
             <div className = ""> {this.renderComingSoon()} </div>
-                <Col xs={5} className="userInfo__useImage" >
+                {/* <Col xs={5} className="userInfo__useImage" >
                                 {this.renderSignoutButton()} 
-                </Col> 
+                </Col>  */}
                 CameraPage
                 <NaviBar/>
                 

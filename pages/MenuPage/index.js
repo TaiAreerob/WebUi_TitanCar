@@ -65,12 +65,13 @@ class MenuPage extends Component {
         return (
             <div>
                 
-                <div className = ""> {this.renderComingSoon()} </div>
+                
+                
+
+                <UserInfo/>
                 <Col xs={5} className="userInfo__useImage" >
                                 {this.renderSignoutButton()} 
                 </Col> 
-
-                <UserInfo/>
                 <NaviBar/>
             </div>
 

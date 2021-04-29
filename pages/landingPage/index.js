@@ -102,9 +102,9 @@ class LandingPage extends Component {
             
             
             <div className = ""> {this.renderComingSoon()} </div>
-                <Col xs={5} className="userInfo__useImage" >
+                {/* <Col xs={5} className="userInfo__useImage" >
                                 {this.renderSignoutButton()} 
-                </Col> 
+                </Col>  */}
             
             <div>
 
