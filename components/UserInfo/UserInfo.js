@@ -24,10 +24,10 @@ class UserInfo extends React.Component {
                             userid={id}
                             imgURL={imageUrl}
                         />
-                        <ul className="content">
-                        {/* {coin} Bath */}
-                        {displayName}
-                        </ul>
+                        {/* <ul className="content">
+                        {coin} Bath */}
+                        <h>{displayName}</h>
+                        {/* </ul> */}
                     </div>
 
             </div>

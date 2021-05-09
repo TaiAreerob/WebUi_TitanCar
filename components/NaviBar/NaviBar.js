@@ -7,6 +7,7 @@ import UserInfo from '../UserInfo/UserInfo';
 import firebase from 'firebase/app'
 import { getUserCookies, removeUserCookies, setUserCookies } from '../../service/cookiesServices'
 import Link from 'next/link'
+import LinkPages from '../LinkPages/LinkPages'
     
     function NaviBar () {
 
@@ -26,25 +27,27 @@ import Link from 'next/link'
                 <a>
                 <FaIcons.FaBars onClick={showSidebar} />
                 </a>
-                <a href = '/landingPage'>
+                <LinkPages href = '/landingPage'>
                     <AiIcons.AiFillHome/>
-                </a> 
+                </LinkPages> 
 
-                <a href = '/CarPage'>
+                <LinkPages href = '/CarPage'>
                     <FaIcons.FaCar/>
-                </a> 
+                </LinkPages> 
 
-                <a href = '/CameraPage'>
+                <LinkPages href = '/CameraPage'>
                     <BsIcons.BsFillCameraVideoFill/>
-                </a> 
+                </LinkPages> 
           
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           
             <div className='navbar-toggle'>
-                <UserInfo/>
+                    <UserInfo/>
+            <div className = "tab-logout">
                 <div className = "toggle-close">
                     <AiIcons.AiOutlineClose onClick={showSidebar}/>
+                 </div> 
                     <div className = "sign-out">
                     <Link href="/">
                     <button className ="button-signout" onClick ={singout}>sign out</button>
